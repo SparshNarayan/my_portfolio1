@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sparsh Narayan – ML Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<style>
+:root{--bg:#eef2f8;--surface:#fff;--ink:#14213d;--muted:#55627d;--line:#cfd8e8;--a:#2b50d8;--b:#0e9f8e;--on-a:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1729;--surface:#17213a;--ink:#e6ecf8;--muted:#9aa8c7;--line:#2a375a;--a:#8aa6ff;--b:#3fd0bd;--on-a:#0f1729}}
+:root[data-theme="dark"]{--bg:#0f1729;--surface:#17213a;--ink:#e6ecf8;--muted:#9aa8c7;--line:#2a375a;--a:#8aa6ff;--b:#3fd0bd;--on-a:#0f1729}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "IBM Plex Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;line-height:1.1;margin:0}
+a{color:var(--a)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--a);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+nav{display:flex;gap:22px;padding:20px 0;flex-wrap:wrap;font-weight:500}
+nav a{color:var(--ink);text-decoration:none}
+nav a:hover{color:var(--a)}
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+.hero canvas{position:absolute;inset:0;width:100%;height:100%}
+.hero .wrap{position:relative;padding-top:56px;padding-bottom:96px}
+h1{font-size:clamp(46px,9vw,92px);font-weight:800;letter-spacing:-.03em;margin-top:56px}
+.lede{font-size:clamp(19px,2.6vw,24px);max-width:34em;margin:22px 0 30px;color:var(--ink)}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;font-weight:500;text-decoration:none;border:2px solid var(--a)}
+.btn.p{background:var(--a);color:var(--on-a)}
+.btn.s{color:var(--a)}
+section{padding:80px 0;border-bottom:1px solid var(--line)}
+h2{font-size:clamp(30px,5vw,44px);font-weight:700;letter-spacing:-.02em;margin-bottom:28px}
+h3{font-size:22px;font-weight:700}
+p{margin:0 0 14px;max-width:62ch}
+.muted{color:var(--muted)}
+.layers{display:grid;gap:0;border-left:3px solid var(--b);padding-left:26px}
+.role-top{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline}
+.when{color:var(--muted);font-size:15px}
+ul{padding-left:20px;margin:14px 0}
+li{margin-bottom:8px;max-width:66ch}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.tag{font-size:14px;padding:3px 12px;border-radius:999px;background:var(--surface);border:1px solid var(--line)}
+.proj{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:24px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:28px}
+.stats{display:flex;gap:40px;flex-wrap:wrap;margin-top:28px}
+.stats b{display:block;font:800 36px "Bricolage Grotesque",sans-serif;color:var(--a)}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:40px}
+.skills dt{font-weight:500;margin-top:14px}
+.skills dd{margin:2px 0 0;color:var(--muted)}
+footer{padding:60px 0 80px}
+footer .big{font:700 clamp(26px,5vw,40px)/1.2 "Bricolage Grotesque",sans-serif;overflow-wrap:anywhere}
+.links{display:flex;gap:20px;flex-wrap:wrap;margin-top:22px}
+@media (prefers-reduced-motion:no-preference){.hero h1{animation:rise .8s ease-out both}@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}}
+</style>
+</head>
+<body>
+<header class="hero">
+<canvas id="net" aria-hidden="true"></canvas>
+<div class="wrap">
+<nav aria-label="Sections"><a href="#research">Research</a><a href="#projects">Projects</a><a href="#wins">Achievements</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
+<h1>Sparsh Narayan</h1>
+<p class="lede">ML engineer in training. I build classification models and study how brain networks change in dementia.</p>
+<div class="btns"><a class="btn p" href="#projects">See my projects</a><a class="btn s" href="mailto:sparshn552@gmail.com">Email me</a></div>
+</div>
+</header>
+
+<main>
+<section id="about"><div class="wrap">
+<h2>About</h2>
+<p>I'm a B.Tech Computer Science student at Doon University in Dehradun (CGPA 8.44), working in Python, machine learning, deep learning and NLP.</p>
+<p>I practise data structures and algorithms in C++ and have solved over 550 problems on LeetCode. I like using AI on real problems, from spam filtering to emergency healthcare.</p>
+<div class="stats"><div><b>550+</b>LeetCode problems</div><div><b>8.44</b>CGPA, B.Tech CSE</div><div><b>4</b>coding contest and hackathon podiums</div></div>
+</div></section>
+
+<section id="research"><div class="wrap">
+<h2>Research experience</h2>
+<div class="layers">
+<div class="role-top"><h3>Research Intern (IAS SRFP)</h3><span class="when">Jun 2026 – Aug 2026 · On-site, Bengaluru</span></div>
+<p class="muted">Amrita Vishwa Vidyapeetham</p>
+<ul>
+<li>Researched EEG-based dementia classification using a five-layer multiplex brain network (Delta, Theta, Alpha, Beta and Gamma bands), building supra-adjacency matrices from intra-layer and inter-layer connectivity.</li>
+<li>Extracted graph-theoretic and spectral features and applied feature selection to improve classification.</li>
+<li>Ran pairwise classification of AD vs HC, FTD vs HC and AD vs FTD with graph-based machine learning.</li>
+<li>Built an MRI-based sex classification framework on a two-layer multiplex network combining functional connectivity (fMRI) and structural connectivity (DWI).</li>
+<li>Trained and evaluated the models in Python, covering preprocessing, feature engineering and performance assessment.</li>
+<li>Attended the 37th Indian Academy of Sciences Mid-Year Meeting at IISc Bengaluru on 3 July 2026.</li>
+</ul>
+<div class="tags"><span class="tag">Python</span><span class="tag">NumPy</span><span class="tag">Pandas</span><span class="tag">Scikit-learn</span><span class="tag">NetworkX</span><span class="tag">Matplotlib</span><span class="tag">Graph theory</span></div>
+</div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+<h2>Projects</h2>
+<div class="proj">
+<article class="card">
+<h3>LifeGrid</h3>
+<p class="muted">Emergency healthcare coordination, built for SIH26133</p>
+<ul>
+<li>Emergency reporting form with incident location, patient details, injury indicators and priority scoring.</li>
+<li>Map-based dispatch demo that picks a suitable available ambulance and shows its route and ETA.</li>
+<li>Hospital directory with matching to nearby care facilities.</li>
+<li>Regional views: a Dehradun-focused demo and a pan-India interface.</li>
+</ul>
+<div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">React</span><span class="tag">Scikit-learn</span><span class="tag">Pandas</span></div>
+<p style="margin-top:16px"><a href="https://github.com/SparshNarayan/SIH-Hackathon" target="_blank" rel="noopener">View on GitHub</a></p>
+</article>
+<article class="card">
+<h3>SMS Spam Classifier</h3>
+<p class="muted">Individual project</p>
+<ul>
+<li>Classifies SMS messages as spam or legitimate using NLP.</li>
+<li>Text preprocessing and TF-IDF feature extraction for a stronger data representation.</li>
+<li>Trained and compared several Scikit-learn models to get the best accuracy.</li>
+</ul>
+<div class="tags"><span class="tag">Python</span><span class="tag">Scikit-learn</span><span class="tag">NLTK</span><span class="tag">TF-IDF</span></div>
+<p style="margin-top:16px"><a href="https://github.com/SparshNarayan/SMS-Spam-Classifier" target="_blank" rel="noopener">View on GitHub</a></p>
+</article>
+</div>
+</div></section>
+
+<section id="wins"><div class="wrap">
+<h2>Achievements</h2>
+<div class="two">
+<div>
+<h3>College</h3>
+<ul>
+<li>1st place, DSA Coding Contest, Doon University</li>
+<li>Runner-up, Blind Coding Competition, Doon University</li>
+<li>3rd place, 48-hour Hackathon, Doon University</li>
+<li>Runner-up, Coding Hackathon, Envision Tech Fest</li>
+</ul>
+</div>
+<div>
+<h3>School (St. Thomas College, Dehradun)</h3>
+<ul>
+<li>92% in Class XII and 84.4% in Class X</li>
+<li>Runner-up, Mind Spree Mathematics Competition</li>
+<li>GC Khanna Award (₹3,100) for top performance in Mathematics</li>
+</ul>
+</div>
+</div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+<h2>Skills</h2>
+<dl class="skills two" style="gap:0 40px">
+<div><dt>Programming</dt><dd>C++, C, Python</dd><dt>Web development</dt><dd>HTML, CSS, JavaScript</dd><dt>Frameworks and libraries</dt><dd>FastAPI, NumPy, Pandas, Seaborn, Matplotlib, Scikit-learn, NLTK</dd><dt>Databases</dt><dd>MySQL</dd></div>
+<div><dt>Tools</dt><dd>Git, GitHub, VS Code</dd><dt>Soft skills</dt><dd>Communication, teamwork, leadership, critical thinking, time management, problem solving</dd><dt>Languages</dt><dd>English, Hindi</dd></div>
+</dl>
+</div></section>
+</main>
+
+<footer id="contact"><div class="wrap">
+<h2>Contact</h2>
+<p class="big"><a href="mailto:sparshn552@gmail.com">sparshn552@gmail.com</a></p>
+<p class="muted">Dehradun, India</p>
+<div class="links"><a href="https://www.linkedin.com/in/sparsh-narayan-249641328/" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/SparshNarayan" target="_blank" rel="noopener">GitHub</a><a href="https://leetcode.com/u/Sparsh_Narayan1/" target="_blank" rel="noopener">LeetCode</a></div>
+</div></footer>
+
+<script>
+(function(){
+var c=document.getElementById('net'),x=c.getContext('2d'),W,H,L1=[],L2=[],reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+function css(n){return getComputedStyle(document.documentElement).getPropertyValue(n).trim()}
+function init(){
+ var r=c.getBoundingClientRect(),d=devicePixelRatio||1;W=r.width;H=r.height;c.width=W*d;c.height=H*d;x.setTransform(d,0,0,d,0,0);
+ var n=W<600?14:26;L1=[];L2=[];
+ for(var i=0;i<n;i++){var px=W*.35+Math.random()*W*.65,py=Math.random()*H;
+  L1.push({x:px,y:py,vx:(Math.random()-.5)*.15,vy:(Math.random()-.5)*.15});
+  L2.push({x:px+22,y:py+16,vx:(Math.random()-.5)*.15,vy:(Math.random()-.5)*.15});}
+}
+function edges(L,col,max){x.strokeStyle=col;x.lineWidth=1;
+ for(var i=0;i<L.length;i++)for(var j=i+1;j<L.length;j++){var dx=L[i].x-L[j].x,dy=L[i].y-L[j].y;if(dx*dx+dy*dy<max*max){x.beginPath();x.moveTo(L[i].x,L[i].y);x.lineTo(L[j].x,L[j].y);x.stroke()}}}
+function dots(L,col){x.fillStyle=col;L.forEach(function(p){x.beginPath();x.arc(p.x,p.y,3,0,7);x.fill()})}
+function draw(){
+ x.clearRect(0,0,W,H);var a=css('--a'),b=css('--b');
+ x.globalAlpha=.28;edges(L2,b,130);edges(L1,a,130);
+ x.globalAlpha=.2;x.strokeStyle=css('--muted');
+ for(var i=0;i<L1.length;i++){x.beginPath();x.moveTo(L1[i].x,L1[i].y);x.lineTo(L2[i].x,L2[i].y);x.stroke()}
+ x.globalAlpha=.7;dots(L2,b);dots(L1,a);x.globalAlpha=1;
+ if(!reduce){L1.forEach(function(p,i){p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1;L2[i].x=p.x+22;L2[i].y=p.y+16});requestAnimationFrame(draw)}
+}
+init();draw();
+var t;addEventListener('resize',function(){clearTimeout(t);t=setTimeout(function(){init();if(reduce)draw()},150)});
+})();
+</script>
+</body>
+</html>
+
+
